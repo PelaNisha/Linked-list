@@ -30,9 +30,8 @@ void insert_first(int item)
 	}else
 	{
 		printf("\nEnter value\n");    
-        scanf("%d",&tem);    
-        Newnode->info = tem;  
-//		Newnode->info =info;
+        	scanf("%d",&tem);    
+        	Newnode->info = tem;  
 		Newnode->next = first;
 		first = Newnode;
 		printf("node inserted\n");
@@ -88,7 +87,6 @@ void insert_at()
 void delete_first()
 {
 	NodeType *temp;
-//	Newnode=(NodeType*)malloc\(sizeof(NodeType));
 	temp = first;
 	first = temp->next;
 	free(temp);
@@ -159,7 +157,7 @@ int main()
 				break;
 			
 			case 2:
-//				printf("Display\n");
+			
 				display();
 				break;
 			case 3:
