@@ -152,22 +152,17 @@ int main()
 		scanf("%d", &a);
 		switch(a){
 			case 1:
-				
 				insert_first(b);
 				break;
-			
 			case 2:
-			
 				display();
 				break;
 			case 3:
 				exit;
 				break;
-			
 			case 4:
 				insert_last(b);	
 				break;
-			
 			case 5:
 				insert_at();
 				break;	
