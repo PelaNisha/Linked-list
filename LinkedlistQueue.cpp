@@ -81,18 +81,14 @@ int main()
 		scanf("%d", &a);
 		switch(a){
 			case 1:
-				
 				insert();
 				break;
-			
 			case 2:
-//				printf("Display\n");
 				display();
 				break;
 			case 3:
 				exit;
 				break;
-			
 			case 4:
 				delet();	
 				break;
