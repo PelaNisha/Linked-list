@@ -87,6 +87,7 @@ void delete_first()
 		printf("First element deleted\n");
 	}
 }
+
 void delete_last()
 {
 	NodeType *temp;
@@ -110,6 +111,7 @@ void delete_last()
 	}
 	
 }
+
 void display()
 {
 	NodeType *temp;
@@ -127,6 +129,8 @@ void display()
 		printf("%d\n", last->info);
 	}
 }
+
+
 int main()
 {
 
