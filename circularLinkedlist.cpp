@@ -24,7 +24,7 @@ void insert_first()
 	Newnode->info =a;
 	if(first==NULL)
 	{
-//		Newnode->info =a;
+
 		Newnode->next = Newnode;
 		first = Newnode;
 		last = Newnode;
@@ -44,7 +44,6 @@ void insert_last()
 	int a;
 	NodeType *Newnode;
 	Newnode=(NodeType*)malloc(sizeof(NodeType));
-//	temp = first;
 	printf("Enter the number\n");
 	scanf("%d", &a);
 	Newnode->info =a;
@@ -69,7 +68,6 @@ void insert_at()
 	int a, po;
 	NodeType *Newnode, *temp;
 	Newnode=(NodeType*)malloc(sizeof(NodeType));
-//	temp = first;
 	printf("Enter the pos and number\n");
 	scanf("%d%d", &po, &a);
 	Newnode->info =a;
@@ -125,7 +123,7 @@ void delete_last()
 		{
 			temp = temp->next;
 		}
-	//	temp->next=first;
+	
 		last= temp;
 		temp= temp->next;
 		last->next=first;
@@ -146,15 +144,12 @@ void delete_at()
 	hold= temp->next;
 	temp->next = hold->next;
 	free(hold);
-			
-//	last->next= first;
-//	temp = temp->next;
-//	free(hold);
+
 }
 void display()
 {
 	NodeType *temp;
-//	temp = first;
+
 	if(first==NULL)
 	{
 		printf("Empty linked list\n");
@@ -183,7 +178,7 @@ int main()
 		switch(a){
 			case 1:
 				exit;
-//				break;
+				break;
 			case 2:
 				insert_first();
 				break;	
