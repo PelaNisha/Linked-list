@@ -72,7 +72,6 @@ void delete_first()
 	}else
 	{
 		first= first->next;
-//		last->next= first;
 		free(temp);
 		printf("Deleted\n");
 	}
@@ -95,7 +94,6 @@ void delete_last()
 	{
 		hold = last;
 		last= temp->prev;
-//		last->next= first;
 		free(hold);
 		printf("item deleted from last\n");
 		
@@ -104,7 +102,6 @@ void delete_last()
 void display()
 {
 	NodeType *temp;
-//	Newnode = (NodeType*)malloc(sizeof(NodeType));
 	if(first==NULL)
 	{
 		printf("Nothing to display\n");
@@ -132,7 +129,7 @@ int main()
 		switch(a){
 			case 1:
 				exit;
-//				break;
+				break;
 			case 2:
 				insert_first();
 				break;	
