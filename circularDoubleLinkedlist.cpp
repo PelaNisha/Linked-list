@@ -156,7 +156,6 @@ int main()
 			case 5:
 				delete_first();
 				break;
-				
 			case 6:
 				delete_last();
 				break;
